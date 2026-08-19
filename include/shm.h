@@ -5,7 +5,7 @@ namespace ipc{
 
     class SharedMemory {
     public:
-        SharedMemory();
+        SharedMemory() = default;
         ~SharedMemory();
 
         // 禁止拷贝和赋值
@@ -23,7 +23,7 @@ namespace ipc{
 
 
         // 打开
-        bool open();
+        bool open(const std::string& name);
 
 
         // 关闭
@@ -34,7 +34,7 @@ namespace ipc{
         void unlink();
 
 
-        void* date()const { return addr_; }
+        void* data()const { return addr_; }
         std::size_t size()const { return size_; }
         // int fd()const {return fd_;}
         bool valid()const { return addr_ != nullptr; }

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libipc.a CMakeFiles/ipc.dir/src/shm.cpp.o
+/usr/bin/ranlib libipc.a

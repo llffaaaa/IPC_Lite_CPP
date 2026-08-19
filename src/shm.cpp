@@ -51,7 +51,7 @@ namespace ipc {
         }
 
         // 2. 更改大小
-        if(::ftruncate(fd_, static_cast<off_t>(size) < 0)){
+        if(::ftruncate(fd_, static_cast<off_t>(size)) < 0){
             std::cerr << "[shm] ftruncate failed: " << std::strerror(errno) << std::endl;
             ::close(fd_);
             fd_ = -1;
@@ -82,7 +82,38 @@ namespace ipc {
         std::memset(addr_, 0, size_);
         return true;
     }
+    bool SharedMemory::open(const std::string& name){
+        close();
+        name_ = name;
+        // 1. 打开
+        fd_ = ::shm_open(name.c_str(), O_RDWR, 0666);
+        if (fd_ < 0) {
+            std::cerr << "[shm] shm_open failed: " << std::strerror(errno) << std::endl;
+            return false;
+        }
 
+        // 3. 获取文件信息
+        struct stat sb;
+        if (::fstat(fd_, &sb) < 0) {
+            std::cerr << "[shm] fstat failed: " << std::strerror(errno) << std::endl;
+            ::close(fd_);
+            fd_ = -1;
+            return false;
+        }
+        size_ = static_cast<std::size_t>(sb.st_size);
+
+        // 4. 映射内存
+        addr_ = ::mmap(NULL, size_, PROT_READ | PROT_WRITE, MAP_SHARED, fd_, 0);
+        if (addr_ == MAP_FAILED) {
+            std::cerr << "[shm] mmap failed: " << std::strerror(errno) << std::endl;
+            addr_ = nullptr;
+            ::close(fd_);
+            fd_ = -1;
+            return false;
+        }
+
+        return true;
+    }
     void SharedMemory::unlink(){
         if (!name_.empty()){
             shm_unlink(name_.c_str());

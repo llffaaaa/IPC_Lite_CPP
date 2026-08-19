@@ -117,48 +117,74 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named demo
+# Target rules for targets named ipc
 
 # Build rule for target.
-demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo
-.PHONY : demo
+ipc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ipc
+.PHONY : ipc
 
 # fast build rule for target.
-demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
-.PHONY : demo/fast
+ipc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc.dir/build.make CMakeFiles/ipc.dir/build
+.PHONY : ipc/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named day1_writer
+
+# Build rule for target.
+day1_writer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 day1_writer
+.PHONY : day1_writer
+
+# fast build rule for target.
+day1_writer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/build
+.PHONY : day1_writer/fast
+
+#=============================================================================
+# Target rules for targets named day1_reader
+
+# Build rule for target.
+day1_reader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 day1_reader
+.PHONY : day1_reader
+
+# fast build rule for target.
+day1_reader/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/build
+.PHONY : day1_reader/fast
+
+src/reader.o: src/reader.cpp.o
+.PHONY : src/reader.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/reader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/src/reader.cpp.o
+.PHONY : src/reader.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/reader.i: src/reader.cpp.i
+.PHONY : src/reader.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/reader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/src/reader.cpp.i
+.PHONY : src/reader.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/reader.s: src/reader.cpp.s
+.PHONY : src/reader.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/reader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/src/reader.cpp.s
+.PHONY : src/reader.cpp.s
 
 src/shm.o: src/shm.cpp.o
 .PHONY : src/shm.o
 
 # target to build an object file
 src/shm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/shm.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc.dir/build.make CMakeFiles/ipc.dir/src/shm.cpp.o
 .PHONY : src/shm.cpp.o
 
 src/shm.i: src/shm.cpp.i
@@ -166,7 +192,7 @@ src/shm.i: src/shm.cpp.i
 
 # target to preprocess a source file
 src/shm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/shm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc.dir/build.make CMakeFiles/ipc.dir/src/shm.cpp.i
 .PHONY : src/shm.cpp.i
 
 src/shm.s: src/shm.cpp.s
@@ -174,8 +200,32 @@ src/shm.s: src/shm.cpp.s
 
 # target to generate assembly for a file
 src/shm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/shm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc.dir/build.make CMakeFiles/ipc.dir/src/shm.cpp.s
 .PHONY : src/shm.cpp.s
+
+src/writer.o: src/writer.cpp.o
+.PHONY : src/writer.o
+
+# target to build an object file
+src/writer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/src/writer.cpp.o
+.PHONY : src/writer.cpp.o
+
+src/writer.i: src/writer.cpp.i
+.PHONY : src/writer.i
+
+# target to preprocess a source file
+src/writer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/src/writer.cpp.i
+.PHONY : src/writer.cpp.i
+
+src/writer.s: src/writer.cpp.s
+.PHONY : src/writer.s
+
+# target to generate assembly for a file
+src/writer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/src/writer.cpp.s
+.PHONY : src/writer.cpp.s
 
 # Help Target
 help:
@@ -185,13 +235,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... demo"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... day1_reader"
+	@echo "... day1_writer"
+	@echo "... ipc"
+	@echo "... src/reader.o"
+	@echo "... src/reader.i"
+	@echo "... src/reader.s"
 	@echo "... src/shm.o"
 	@echo "... src/shm.i"
 	@echo "... src/shm.s"
+	@echo "... src/writer.o"
+	@echo "... src/writer.i"
+	@echo "... src/writer.s"
 .PHONY : help
 
 

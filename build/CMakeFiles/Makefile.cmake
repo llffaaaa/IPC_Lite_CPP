@@ -102,5 +102,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/demo.dir/DependInfo.cmake"
+  "CMakeFiles/ipc.dir/DependInfo.cmake"
+  "CMakeFiles/day1_writer.dir/DependInfo.cmake"
+  "CMakeFiles/day1_reader.dir/DependInfo.cmake"
   )
