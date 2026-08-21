@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/day2_writer.dir/src/writer.cpp.o -o day2_writer  libipc.a 

@@ -64,8 +64,8 @@ CMAKE_BINARY_DIR = /workspaces/IPC_Lite_CPP/build
 
 # The main recursive "all" target.
 all: CMakeFiles/ipc.dir/all
-all: CMakeFiles/day1_writer.dir/all
-all: CMakeFiles/day1_reader.dir/all
+all: CMakeFiles/day2_writer.dir/all
+all: CMakeFiles/day2_reader.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,8 +74,8 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/ipc.dir/clean
-clean: CMakeFiles/day1_writer.dir/clean
-clean: CMakeFiles/day1_reader.dir/clean
+clean: CMakeFiles/day2_writer.dir/clean
+clean: CMakeFiles/day2_reader.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -105,56 +105,56 @@ CMakeFiles/ipc.dir/clean:
 .PHONY : CMakeFiles/ipc.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/day1_writer.dir
+# Target rules for target CMakeFiles/day2_writer.dir
 
 # All Build rule for target.
-CMakeFiles/day1_writer.dir/all: CMakeFiles/ipc.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/IPC_Lite_CPP/build/CMakeFiles --progress-num=3,4 "Built target day1_writer"
-.PHONY : CMakeFiles/day1_writer.dir/all
+CMakeFiles/day2_writer.dir/all: CMakeFiles/ipc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_writer.dir/build.make CMakeFiles/day2_writer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_writer.dir/build.make CMakeFiles/day2_writer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/IPC_Lite_CPP/build/CMakeFiles --progress-num=3,4 "Built target day2_writer"
+.PHONY : CMakeFiles/day2_writer.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/day1_writer.dir/rule: cmake_check_build_system
+CMakeFiles/day2_writer.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/IPC_Lite_CPP/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/day1_writer.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/day2_writer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/IPC_Lite_CPP/build/CMakeFiles 0
-.PHONY : CMakeFiles/day1_writer.dir/rule
+.PHONY : CMakeFiles/day2_writer.dir/rule
 
 # Convenience name for target.
-day1_writer: CMakeFiles/day1_writer.dir/rule
-.PHONY : day1_writer
+day2_writer: CMakeFiles/day2_writer.dir/rule
+.PHONY : day2_writer
 
 # clean rule for target.
-CMakeFiles/day1_writer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/clean
-.PHONY : CMakeFiles/day1_writer.dir/clean
+CMakeFiles/day2_writer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_writer.dir/build.make CMakeFiles/day2_writer.dir/clean
+.PHONY : CMakeFiles/day2_writer.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/day1_reader.dir
+# Target rules for target CMakeFiles/day2_reader.dir
 
 # All Build rule for target.
-CMakeFiles/day1_reader.dir/all: CMakeFiles/ipc.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/IPC_Lite_CPP/build/CMakeFiles --progress-num=1,2 "Built target day1_reader"
-.PHONY : CMakeFiles/day1_reader.dir/all
+CMakeFiles/day2_reader.dir/all: CMakeFiles/ipc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_reader.dir/build.make CMakeFiles/day2_reader.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_reader.dir/build.make CMakeFiles/day2_reader.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/IPC_Lite_CPP/build/CMakeFiles --progress-num=1,2 "Built target day2_reader"
+.PHONY : CMakeFiles/day2_reader.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/day1_reader.dir/rule: cmake_check_build_system
+CMakeFiles/day2_reader.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/IPC_Lite_CPP/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/day1_reader.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/day2_reader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/IPC_Lite_CPP/build/CMakeFiles 0
-.PHONY : CMakeFiles/day1_reader.dir/rule
+.PHONY : CMakeFiles/day2_reader.dir/rule
 
 # Convenience name for target.
-day1_reader: CMakeFiles/day1_reader.dir/rule
-.PHONY : day1_reader
+day2_reader: CMakeFiles/day2_reader.dir/rule
+.PHONY : day2_reader
 
 # clean rule for target.
-CMakeFiles/day1_reader.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/clean
-.PHONY : CMakeFiles/day1_reader.dir/clean
+CMakeFiles/day2_reader.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_reader.dir/build.make CMakeFiles/day2_reader.dir/clean
+.PHONY : CMakeFiles/day2_reader.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

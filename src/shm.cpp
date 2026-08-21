@@ -1,4 +1,4 @@
-#include "shm.h"
+#include "ipc/shm.h"
 #include <sys/mman.h>
 #include <sys/stat.h>        /* For mode constants */
 #include <unistd.h>

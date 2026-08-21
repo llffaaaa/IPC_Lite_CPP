@@ -1,2 +1,2 @@
-# Empty dependencies file for day1_reader.
+# Empty dependencies file for day2_writer.
 # This may be replaced when dependencies are built.

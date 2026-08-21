@@ -1,6 +1,6 @@
-CMakeFiles/day1_writer.dir/src/writer.cpp.o: \
+CMakeFiles/day2_writer.dir/src/writer.cpp.o: \
  /workspaces/IPC_Lite_CPP/src/writer.cpp /usr/include/stdc-predef.h \
- /workspaces/IPC_Lite_CPP/include/shm.h /usr/include/c++/13/string \
+ /workspaces/IPC_Lite_CPP/include/ipc/shm.h /usr/include/c++/13/string \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -115,6 +115,14 @@ CMakeFiles/day1_writer.dir/src/writer.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
+ /workspaces/IPC_Lite_CPP/include/ipc/sync/spin_lock.h \
+ /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/cstdint \
+ /workspaces/IPC_Lite_CPP/include/ipc/sync/semaphore.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \
@@ -152,14 +160,17 @@ CMakeFiles/day1_writer.dir/src/writer.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/cstring \
- /usr/include/string.h /usr/include/strings.h /usr/include/c++/13/chrono \
- /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
- /usr/include/c++/13/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/13/limits /usr/include/c++/13/ctime \
- /usr/include/c++/13/bits/parse_numbers.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/x86_64-linux-gnu/sys/fcntl.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/limits \
+ /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/this_thread_sleep.h

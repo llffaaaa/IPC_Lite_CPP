@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/day2_reader.dir/src/reader.cpp.o -o day2_reader  libipc.a 

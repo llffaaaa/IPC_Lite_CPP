@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspaces/IPC_Lite_CPP/src/writer.cpp" "CMakeFiles/day1_writer.dir/src/writer.cpp.o" "gcc" "CMakeFiles/day1_writer.dir/src/writer.cpp.o.d"
+  "/workspaces/IPC_Lite_CPP/src/reader.cpp" "CMakeFiles/day2_reader.dir/src/reader.cpp.o" "gcc" "CMakeFiles/day2_reader.dir/src/reader.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

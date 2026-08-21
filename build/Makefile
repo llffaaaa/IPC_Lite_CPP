@@ -130,37 +130,37 @@ ipc/fast:
 .PHONY : ipc/fast
 
 #=============================================================================
-# Target rules for targets named day1_writer
+# Target rules for targets named day2_writer
 
 # Build rule for target.
-day1_writer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 day1_writer
-.PHONY : day1_writer
+day2_writer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 day2_writer
+.PHONY : day2_writer
 
 # fast build rule for target.
-day1_writer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/build
-.PHONY : day1_writer/fast
+day2_writer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_writer.dir/build.make CMakeFiles/day2_writer.dir/build
+.PHONY : day2_writer/fast
 
 #=============================================================================
-# Target rules for targets named day1_reader
+# Target rules for targets named day2_reader
 
 # Build rule for target.
-day1_reader: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 day1_reader
-.PHONY : day1_reader
+day2_reader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 day2_reader
+.PHONY : day2_reader
 
 # fast build rule for target.
-day1_reader/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/build
-.PHONY : day1_reader/fast
+day2_reader/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_reader.dir/build.make CMakeFiles/day2_reader.dir/build
+.PHONY : day2_reader/fast
 
 src/reader.o: src/reader.cpp.o
 .PHONY : src/reader.o
 
 # target to build an object file
 src/reader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/src/reader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_reader.dir/build.make CMakeFiles/day2_reader.dir/src/reader.cpp.o
 .PHONY : src/reader.cpp.o
 
 src/reader.i: src/reader.cpp.i
@@ -168,7 +168,7 @@ src/reader.i: src/reader.cpp.i
 
 # target to preprocess a source file
 src/reader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/src/reader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_reader.dir/build.make CMakeFiles/day2_reader.dir/src/reader.cpp.i
 .PHONY : src/reader.cpp.i
 
 src/reader.s: src/reader.cpp.s
@@ -176,7 +176,7 @@ src/reader.s: src/reader.cpp.s
 
 # target to generate assembly for a file
 src/reader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_reader.dir/build.make CMakeFiles/day1_reader.dir/src/reader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_reader.dir/build.make CMakeFiles/day2_reader.dir/src/reader.cpp.s
 .PHONY : src/reader.cpp.s
 
 src/shm.o: src/shm.cpp.o
@@ -208,7 +208,7 @@ src/writer.o: src/writer.cpp.o
 
 # target to build an object file
 src/writer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/src/writer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_writer.dir/build.make CMakeFiles/day2_writer.dir/src/writer.cpp.o
 .PHONY : src/writer.cpp.o
 
 src/writer.i: src/writer.cpp.i
@@ -216,7 +216,7 @@ src/writer.i: src/writer.cpp.i
 
 # target to preprocess a source file
 src/writer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/src/writer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_writer.dir/build.make CMakeFiles/day2_writer.dir/src/writer.cpp.i
 .PHONY : src/writer.cpp.i
 
 src/writer.s: src/writer.cpp.s
@@ -224,7 +224,7 @@ src/writer.s: src/writer.cpp.s
 
 # target to generate assembly for a file
 src/writer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/day1_writer.dir/build.make CMakeFiles/day1_writer.dir/src/writer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/day2_writer.dir/build.make CMakeFiles/day2_writer.dir/src/writer.cpp.s
 .PHONY : src/writer.cpp.s
 
 # Help Target
@@ -235,8 +235,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... day1_reader"
-	@echo "... day1_writer"
+	@echo "... day2_reader"
+	@echo "... day2_writer"
 	@echo "... ipc"
 	@echo "... src/reader.o"
 	@echo "... src/reader.i"
